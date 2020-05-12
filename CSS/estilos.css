@@ -1,0 +1,50 @@
+body{
+    background-image: url("https://wallpaper29.files.wordpress.com/2016/09/black-texture-wallpaper-1600x900.jpg");
+    font-family: Verdana;
+  }
+  
+header{
+    border-width: 100px;
+}
+
+  .menu{
+    background-color:ivory;
+    width: 100vw;
+    background-position: 0px;
+  }
+  
+  .menu li{
+    list-style: none;
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content: space-around;  
+  }
+  
+  a{
+    text-decoration: none;
+    color: darkblue;
+  }
+  
+  a:hover{
+    text-decoration: underline; 
+    color: darkcyan;
+  }
+  
+  .subtitulo,
+  .titulo{
+    text-align: center;
+    color: whitesmoke;
+  }
+  
+  .titulo{
+    border: rgba(50, 100, 255, 0.5) solid thick;
+    padding: 5px; 
+    box-shadow: 0px 0px 10px 1px whitesmoke;
+    box-sizing: content-box;
+  }
+
+  .subtitulo{
+    font-style: italic;
+  }
