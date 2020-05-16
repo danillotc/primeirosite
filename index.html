@@ -7,27 +7,30 @@
     <link rel="stylesheet" href="CSS/estilos.css">
     <!-- Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Roboto+Slab&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/e00a70e606.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav class="menu">
           <ul>
             <li>
-              <a href="https://www.facebook.com/DanilloTC">
-                <img class="thumbnail" src="./img/facebook.png" alt="FBlogo">Facebook
+              <a href="#home">
+                <i class="fas fa-home"></i>
+                Home
               </a>
             </li>
             
             <li>
-              <a href="https://soundcloud.com/danillo-tc">
-                <img class="thumbnail" src="./img/soundcloud.png" alt="SClogo">SoundCloud
+              <a href="#curriculo">
+                <i class="fas fa-scroll"></i>
+                Currículo
               </a>
             </li>
             
             <li>
-              <a href="https://www.linkedin.com/in/danillotc/">
-                <img class="thumbnail" src="./img/linkedin.png" alt="LIlogo">LinkedIn
+              <a href="#contato">
+                <i class="fas fa-envelope"></i>
+                Contato
               </a>
             </li>
           </ul>
@@ -37,8 +40,9 @@
           <h2 class="subtitulo">Página pessoal</h2> 
         </div>
       </header>
-      <section>
-        <div class="acad_prof">
+      
+      <section id="curriculo">
+        <div class="titulo_section">
           Acadêmico e profissional
         </div>  
         <div class="grid">
@@ -54,6 +58,16 @@
               Experiências profissionais
             </figcaption>
           </figure>
+        </div>
+      </section>
+
+      <section id="contato">
+        <div class="titulo_section">
+          Contato
+        </div>
+        <div>
+          Email: danillotc@hotmail.com
+          Linkedin: danillo-tc
         </div>
       </section>
 </body>
