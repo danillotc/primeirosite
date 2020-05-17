@@ -18,17 +18,11 @@ body{
   body {
     font-size: 14px;
   }
-  .thumbnail {
-    height: 20px
-  }
 }
 
 @media (min-width: 600px) {
   body {
     font-size: 16px;
-  }
-  .thumbnail {
-    height: 30px
   }
 }
 
@@ -68,21 +62,24 @@ header{
   align-items: center;
   text-decoration: none;
   color: rgb(50,50,50);
-  transition: color 500ms, text-shadow 300ms;  
+  transition: color 300ms, text-shadow 100ms;  
 }
 
 .menu i {
   padding-right: 10px;
 }
 
-.menu a:hover{
-  color:whitesmoke;
-  text-shadow: 0px 0px 6px black; 
+/*para desktop*/
+@media (min-width: 900px) {
+  .menu a:hover {
+    color:whitesmoke;
+    text-shadow: 0px 0px 6px black; 
+  }
 }
 
-.thumbnail{
-  padding-right: 10px;
-  height: 10px;
+.menu a:active {
+  color:whitesmoke;
+  text-shadow: 0px 0px 6px black; 
 }
 
 /* Título e subtítulo */
@@ -92,13 +89,14 @@ header{
     text-align: center;
     color: whitesmoke;
     font-family: 'Lustria', serif;
+    opacity: 0;
 }
 
 .titulo{
   padding: 5px; 
   box-sizing: content-box;
   font-size: 3em;
-  animation: fadein ease-out 3s;
+  animation: 3s fadein ease-out 200ms forwards;
 }
 
 
@@ -106,7 +104,7 @@ header{
   font-style: italic;
   font-size: 2em;
   padding: 30px;
-  animation: fadein ease-in 3s;    
+  animation: 3s fadein ease-in 200ms forwards;    
 }
 
 @keyframes fadein {
@@ -118,7 +116,7 @@ header{
   }
 }
 
-/*  SECTION 1  */
+/*  SECTION 1: CURRICULO  */
 
 section {
   height: 100vh;
@@ -126,23 +124,69 @@ section {
   font-family: 'Roboto Slab', serif;
 }
 
-.titulo_section {
+h3 {
   font-size: 2em;
   padding: 20px;
   padding-top: 80px;
   text-align: center;
 }
 
-.grid {
-  height: 100% - 360px;
-  padding: 70px;
+h4 {
+  font-size: 1.5em;
   text-align: center;
-  display: grid;  
-  justify-items: center;
-  gap: 120px;
+  padding-bottom: 1em;
 }
 
-@media (min-width: 600px) {
+.grid-cv {
+  text-align: justify;
+  display: grid;
+  grid-template: 100% / 50% 50%;  
+  justify-items: center;
+}
+
+.texto {
+  width: 35vw;
+}
+
+/* SECTION 2: PROJETOS  */
+
+.grid-projetos {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 100%;
+  justify-items: center;
+}
+
+/* para desktop */
+@media (min-width: 900px) {
+  .grid-projetos {
+    display: grid;
+    grid-template: 100% / 1fr 1fr 1fr;
+  }  
+}
+
+.grid-projetos img {
+  height: 100px;
+  border-radius: 20px;
+}
+
+.grid-projetos figcaption {
+  text-align: center;
+  padding-top: .5em;
+  padding-bottom: 2em;
+}
+
+/* FOOTER */
+
+.footer {
+  font-size: 0.8em;
+  color: gray;
+  text-align: center;
+  bottom: 0;
+  padding: 1em;
+  background-color: whitesmoke;
+}
+
+/* @media (min-width: 600px) {
   .grid {
     height: 100% - 360px;
     padding: 40px;
@@ -154,24 +198,27 @@ section {
   }
 }
 
-@media (min-width: 900px) {
+/*para desktop*/ 
+/* @media (min-width: 900px) {
   .grid {
     padding-top: 100px;
   }
-}
 
-.grid figure {
-  transition: transform 200ms;
-}
-
-.grid figure:hover {
-  filter: drop-shadow(0 0 10px whitesmoke);
-  transform: scale(1.05);
+  .grid figure:hover img {
+    filter: drop-shadow(0 0 10px whitesmoke);
+    transform: scale(1.05);
+  }
 }
 
 .grid img {
   height: 75px;  
   border-radius: 100px;
+  transition: transform 100ms;
+}
+
+.grid figure:active img {
+  filter: drop-shadow(0 0 10px whitesmoke);
+  transform: scale(1.05);
 }
 
 @media (min-width: 400px) {
@@ -186,4 +233,4 @@ section {
     height: 150px;
     border-radius: 100px;
   } 
-}
+} */ 
