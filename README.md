@@ -1,2 +1,2 @@
 # site-pessoal
-Estudo de front-end feito na "semana de imersão CSS".
+Site pessoal desenvolvido na "semana de imersão CSS" da Alura.
