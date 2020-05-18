@@ -1,99 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Em construção</title>
-    <link rel="stylesheet" href="CSS/estilos.css">
-    <!-- Fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e00a70e606.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Em construção</title>
+  <link rel="stylesheet" href="CSS/estilos.css">
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e00a70e606.js" crossorigin="anonymous"></script>
+  <script src="controls.js"></script>
 </head>
+
 <body>
-    <header id="home">
-        <nav class="menu">
-          <ul>
-            <li>
-              <a href="#home">
-                <i class="fas fa-home"></i>
-                Home
-              </a>
-            </li>
-            
-            <li>
-              <a href="#curriculo">
-                <i class="fas fa-scroll"></i>
-                Currículo
-              </a>
-            </li>
-            
-            <li>
-              <a href="#projetos">
-                <i class="fas fa-plus"></i>
-                Projetos
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div>
-          <h1 class="titulo">Danillo Castro</h1>
-          <h2 class="subtitulo">Página pessoal</h2> 
-        </div>
-      </header>
-      
-      <section id="curriculo">
-        <div>
-          <h3>Currículo</h3>
-        </div>  
-        <div class="grid-cv">
-          <div class="texto">
-            <h4>Acadêmico</h4> 
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab adipisci modi neque recusandae numquam porro illum obcaecati mollitia voluptatibus eaque ad omnis accusantium veniam assumenda, odio placeat! Iusto, est reiciendis.
+  <header id="home">
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="#home">
+            <i class="fas fa-home"></i>
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#curriculo">
+            <i class="fas fa-scroll"></i>
+            Currículo
+          </a>
+        </li>
+
+        <li>
+          <a href="#projetos">
+            <i class="fas fa-plus"></i>
+            Projetos
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      <h1 class="titulo">Danillo Castro</h1>
+      <h2 class="subtitulo">Página pessoal</h2>
+    </div>
+  </header>
+
+  <section id="curriculo">
+    <div>
+      <h3>Currículo</h3>
+    </div>
+    <div class="grid-cv">
+      <div class="texto">
+        <h4>Acadêmico</h4>
+
+        <div class="dropdown-button" onclick="toggledropdown('engbio')">
+          <h5>Engenharia Biomédica</h5>
+          <div class="dropdown" id="engbio">
+            <p>Universidade Federal do ABC</p>
+            <p>Bacharelado</p>
+            <p>Período: 2016 - 2018</p>
           </div>
-          <div class="texto">
-            <h4>Profissional</h4>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In repudiandae veniam illum labore, voluptates sit consequatur, harum accusamus blanditiis saepe repellat aut ipsam quibusdam eum! Quibusdam numquam iste possimus ex?
+        </div>
+
+        <div class="dropdown-button" onclick="toggledropdown('bct')">
+          <h5>Ciência e Tecnologia</h5>
+          <div class="dropdown" id="bct">
+            <p>Universidade Federal do ABC</p>
+            <p>Bacharelado</p>
+            <p>Período: 2011 - 2016</p>
           </div>
         </div>
-      </section>
 
-      <section id="projetos">
-        <div>
-          <h3>Projetos</h3>
+        <div class="dropdown-button" onclick="toggledropdown('csf')">
+          <h5>Ciência sem Fronteiras</h5>
+          <div class="dropdown" id="csf">
+            <p>Ryerson University</p>
+            <p>Graduação Sanduíche</p>
+            <p>Período: 2014 - 2015</p>
+          </div>
         </div>
-        <div class="grid-projetos">
-          <figure>      
-            <img src="./img/front.png" alt="logos HTML5 CSS3 JS">      
-            <figcaption>
-              Front-End
-            </figcaption>
-          </figure>
 
-          <figure>
-            <img src="./img/game.png" alt="logo gamedev">
-            <figcaption>
-              Gamedev
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img src="./img/musica.png" alt="logo musica">            
-            <figcaption>
-              Música
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <div class="footer">
-        <p>
-          Última atualização em Maio/2020 |
-          Desenvolvido por 
-          <a href="mailto:danillotc@hotmail.com">Danillo Tonieti de Castro</a> 
-        </p>
-        <p>          
-          Contato: danillotc@hotmail.com | (11) 96901-8334 | <a href="https://www.linkedin.com/in/danillotc/">Linkedin</a> 
-        </p>
       </div>
+      <div class="texto">
+        <h4>Profissional</h4>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In repudiandae veniam illum labore, voluptates sit
+        consequatur, harum accusamus blanditiis saepe repellat aut ipsam quibusdam eum! Quibusdam numquam iste possimus
+        ex?
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div>
+      <h3>Projetos</h3>
+    </div>
+    <div class="grid-projetos">
+      <figure>
+        <img src="./img/front.png" alt="logos HTML5 CSS3 JS">
+        <figcaption>
+          Front-End
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="./img/game.png" alt="logo gamedev">
+        <figcaption>
+          Gamedev
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="./img/musica.png" alt="logo musica">
+        <figcaption>
+          Música
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>
+      Última atualização em Maio/2020 |
+      Desenvolvido por
+      <a href="mailto:danillotc@hotmail.com">Danillo Tonieti de Castro</a>
+    </p>
+    <p>
+      Contato: danillotc@hotmail.com | (11) 96901-8334 | <a href="https://www.linkedin.com/in/danillotc/">Linkedin</a>
+    </p>
+  </div>
 </body>
+
 </html>

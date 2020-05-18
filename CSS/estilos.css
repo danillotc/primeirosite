@@ -44,7 +44,7 @@ header{
   background-position: 0px;
   position: fixed;
   top: 0;
-  font-size: 1em;
+  font-size: 1em;  
 }
   
 .menu li{
@@ -137,15 +137,43 @@ h4 {
   padding-bottom: 1em;
 }
 
+h5 {
+  font-size: 1.2em;
+  text-align: center;
+  padding-bottom: 1.5em;
+  padding-top: 1em;  
+}
+
+.dropdown {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 1em;
+  display: none;  
+}
+
 .grid-cv {
   text-align: justify;
-  display: grid;
-  grid-template: 100% / 50% 50%;  
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  /* grid-template: 100% / 50% 50%;   */
+  /* justify-items: center; */
 }
 
 .texto {
-  width: 35vw;
+  text-align: center;
+  font-size: .9em;
+}
+
+.texto ul {
+  list-style: none;
+}
+
+.texto ul ul {
+  font-size: .8em;
+}
+
+.texto li {
+  margin: .5em;  
 }
 
 /* SECTION 2: PROJETOS  */
