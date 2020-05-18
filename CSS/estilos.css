@@ -125,15 +125,34 @@ section {
   font-family: 'Roboto Slab', serif;
 }
 
-.profissional {
+.grid-cv {
+  display: grid;
+  grid-template: 100% / 50% 50%;
+  justify-items: center;
+}
+
+.texto-cv {
   text-align: center;
   font-size: .9em;
+}
+
+@media (min-width: 600px){ 
+  .grid-cv {
+    grid-template: 100% / 10% 40% 40% 10%;
+  }
+  #academico {
+    grid-column-start: 2;
+  }
+
+  #profissional {
+    grid-column-start: 3;
+  }
 }
 
 h3 {
   font-size: 2em;
   padding-top: 60px;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   text-align: center;
 }
 
@@ -152,7 +171,7 @@ h5 {
 }
 
 .dropdown-button:active h5 {
-  text-shadow: 0px 0px 7px whitesmoke;
+  text-shadow: 0px 0px 10px whitesmoke;
 }
 
 /* para desktop */
@@ -169,12 +188,6 @@ h5 {
   overflow: hidden;
   padding-bottom: 1em;
   display: none;
-}
-
-.grid-cv {
-  display: grid;
-  grid-template: 100% / 50% 50%;
-  justify-items: center;
 }
 
 /* SECTION 2: HABILIDADES  */
